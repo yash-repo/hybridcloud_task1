@@ -10,7 +10,7 @@ region = "ap-south-1"
 
 variable "x" {
   type = string
-  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCD1kXs/m4M9KrrzMTr2S+2U+MCjaF96BZSFomoDzgVPzB1dZnrYM0oylAS7MQ8JwMJvHX2pWya2Fq11ELsJK8qdAAAn/L/rfEK82fGJmsvkqB0RqwSoFlM/VsnXb9582dp/Y58iJ3CgNmoplMTZ1dQgeK8A6Genr0x9AJ7sS4xlUP6K7Jlrsw+uN+2tagunduy+0Gr+IstVMHksTwsciWoWogFpwVGTXQ7EN8rhYn1P78V9upS4C3AFWNPyhX7d10CeSCVpp4FSFs1tpRu1sJF52rrEPKOO9hPST6ldqp6JeHg9LRpZp7wYBqscR/lcqBmGFthbJ0d3B3dxvXCCdO3"
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCw+uN+2tagunduy+0Gr+IsqBmGFthbJ0d3B3dxvXCCdO3"
 }
 
 
