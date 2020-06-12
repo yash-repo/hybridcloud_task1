@@ -1,5 +1,5 @@
-hosts: localhost
-tasks:
+- hosts: localhost
+  tasks:
     - package:
         name: httpd
         state: present
@@ -30,7 +30,8 @@ tasks:
     - file:
         path: /var/www/html/*
         state: absent
-        
+      ignore_errors: yes
+      
     - git:
         clone: yes
         dest: /var/www/html/
