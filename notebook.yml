@@ -1,0 +1,38 @@
+hosts: localhost
+tasks:
+    - package:
+        name: httpd
+        state: present
+        
+    - service:
+        name: httpd
+        state: started
+        enabled: yes
+        
+    - package:
+        name: php
+        state: present
+ 
+    - package:
+        name: git
+        state: present
+    
+    - filesystem:
+        fstype: ext4
+        dev: /dev/xvdh
+
+    - mount:
+        path: /var/www/html/
+        src: /dev/xvdh
+        fstype: ext4
+        state: mounted
+        
+    - file:
+        path: /var/www/html/*
+        state: absent
+        
+    - git:
+        clone: yes
+        dest: /var/www/html/
+        repo: https://github.com/yash-repo/hybridcloud_task1.git
+    
