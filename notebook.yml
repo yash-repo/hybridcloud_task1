@@ -20,15 +20,16 @@
     - filesystem:
         fstype: ext4
         dev: /dev/xvdh
-
+      
     - mount:
         path: /var/www/html/
         src: /dev/xvdh
         fstype: ext4
         state: mounted
-        
+      
+      
     - file:
-        path: /var/www/html/*
+        path: /var/www/html
         state: absent
       ignore_errors: yes
       
